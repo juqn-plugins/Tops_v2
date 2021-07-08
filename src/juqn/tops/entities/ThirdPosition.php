@@ -8,6 +8,7 @@ use Himbeer\LibSkin\SkinConverter;
 use juqn\tops\Tops;
 use pocketmine\entity\Human;
 use pocketmine\entity\Skin;
+use pocketmine\event\entity\EntityDamageEvent;
 use pocketmine\utils\Config;
 
 /**
@@ -23,6 +24,15 @@ class ThirdPosition extends Human
 		$this->setNameTag("§l§6Top #3" . PHP_EOL . "§cNothing");
 		$this->setNameTagAlwaysVisible(true);
 		$this->setScale(0.7);
+	}
+	
+	/**
+	 * @param EntityDamageEvent $event
+	 */
+	public function attack(EntityDamageEvent $source): void
+	{
+		$source->setCancelled();
+		parent::attack($source);
 	}
 	
 	/**
