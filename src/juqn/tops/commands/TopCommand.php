@@ -39,7 +39,7 @@ class TopCommand extends Command
 		if (!$sender instanceof Player)
 			return;
 		
-		if (!$test->testPermission($sender))
+		if (!$this->testPermission($sender))
 			return;
 		
 		if (!isset($args[0])) {

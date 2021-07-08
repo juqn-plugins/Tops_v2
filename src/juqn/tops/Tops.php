@@ -9,6 +9,7 @@ use juqn\tops\entities\FistPosition;
 use juqn\tops\entities\SecondPosition;
 use juqn\tops\entities\ThirdPosition;
 use pocketmine\entity\Entity;
+use pocketmine\plugin\PluginBase;
 
 /**
  * Class Tops
