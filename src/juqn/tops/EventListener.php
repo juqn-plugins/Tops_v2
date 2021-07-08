@@ -9,6 +9,7 @@ use pocketmine\event\entity\EntityDamageByEntityEvent;
 use pocketmine\event\Listener;
 use pocketmine\event\player\PlayerDeathEvent;
 use pocketmine\event\player\PlayerJoinEvent;
+use pocketmine\Player;
 use pocketmine\utils\Config;
 
 /**
@@ -29,7 +30,7 @@ class EventListener implements Listener
 		$cause = $player->getLastDamageCause();
 		
 		if ($cause instanceof EntityDamageByEntityEvent) {
-			$damager = $causa->getDamager();
+			$damager = $cause->getDamager();
 			
 			if ($damager instanceof Player) {
 				$config->set($player->getName(), $config->get($player->getName()) + 1);
