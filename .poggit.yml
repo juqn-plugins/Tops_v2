@@ -3,6 +3,6 @@ build-by-default: true
 branches:
 - main
 projects:
-	Tops_v2:
-		path: ""
+  Tops_v2:
+    path: ""
 ...
