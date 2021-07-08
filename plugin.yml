@@ -1,0 +1,7 @@
+name: Tops
+version: 2.0
+authors:
+ - Jony
+ - JuqnGOOD
+api: 3.0.0
+main: juqn\tops\Tops
