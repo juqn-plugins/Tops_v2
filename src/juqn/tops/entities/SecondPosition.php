@@ -27,7 +27,7 @@ class SecondPosition extends Human
 	}
 	
 	/**
-	 * @param EntityDamageEvent $event
+	 * @param EntityDamageEvent $source
 	 */
 	public function attack(EntityDamageEvent $source): void
 	{
