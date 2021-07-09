@@ -54,7 +54,7 @@ class SecondPosition extends Human
 	 */
 	private function getTop(SecondPosition $entity): ?string
 	{
-		$data = (new Config(Tops::getInstance()->getDataFolder() . 'kills.yml', Config::YAML));
+		$data = (new Config(Tops::getInstance()->getDataFolder() . 'kills.yml', Config::YAML))->getAll();
 		$kills = array_values($data);
 
 		natsort($kills);
